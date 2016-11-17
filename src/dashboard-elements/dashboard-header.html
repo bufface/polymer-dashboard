@@ -1,0 +1,34 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="./dashboard-navbar.html">
+
+<dom-module id="dashboard-header">
+  <template>
+    <style>
+      :host {
+        display: flex;
+        border-bottom: 1px solid var(--google-grey-300);
+      }
+      .left {
+        background-color: var(--paper-pink-200);
+        width: 10%;
+        flex: 1 1 10%;
+      }
+      .right {
+        background-color: var(--google-grey-100);
+        width: 80%;
+        flex: 1 1 80%;
+      }
+    </style>
+    
+    <div class="nav-item left">Image Logo</div>
+    <div class="nav-item right">
+      <dashboard-navbar></dashboard-navbar>
+    </div>
+    
+  </template>
+  <script>
+    Polymer({
+      is: 'dashboard-header'
+    });
+  </script>
+</dom-module>

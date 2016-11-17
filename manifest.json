@@ -1,0 +1,7 @@
+{
+  "name": "dashboard",
+  "short_name": "dashboard",
+  "description": "Responsive Dashboard made with polymer",
+  "start_url": "/",
+  "display": "standalone"
+}

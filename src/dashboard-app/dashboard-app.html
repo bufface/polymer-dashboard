@@ -1,0 +1,31 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/paper-styles/color.html">
+<link rel="import" href="../dashboard-elements/dashboard-header.html">
+
+<dom-module id="dashboard-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+        font-family: sans-serif;
+      }
+      .main {
+        height: 100vh;
+      }
+    </style>
+    
+    <div class="main">
+      <header>
+        <dashboard-header></dashboard-header>
+      </header>
+    </div>
+
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'dashboard-app'
+    });
+  </script>
+</dom-module>
