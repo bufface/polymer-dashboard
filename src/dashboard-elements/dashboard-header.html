@@ -7,20 +7,22 @@
       :host {
         display: flex;
         border-bottom: 1px solid var(--google-grey-300);
+        background-color: var(--paper-grey-200);
       }
       .left {
-        background-color: var(--paper-pink-200);
-        width: 10%;
-        flex: 1 1 10%;
+        flex: 1 1 0%;
+        box-shadow: inset -1px 0 0 0 var(--google-grey-300);
       }
       .right {
-        background-color: var(--google-grey-100);
-        width: 80%;
-        flex: 1 1 80%;
+        flex: 1 1 100%;
+      }
+      @media screen and (min-width: 450px) {
+        .left { flex-basis: 10% }
+        .right { flex-basis: 80% }
       }
     </style>
     
-    <div class="nav-item left">Image Logo</div>
+    <div class="nav-item left"></div>
     <div class="nav-item right">
       <dashboard-navbar></dashboard-navbar>
     </div>
