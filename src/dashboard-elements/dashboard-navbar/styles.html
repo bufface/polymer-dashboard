@@ -1,12 +1,8 @@
-<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../../bower_components/polymer/polymer.html">
 
-<dom-module id="dashboard-navbar">
+<dom-module id="dashboard-navbar-styles">
   <template>
     <style>
-      :host {
-        display: flex;
-        justify-content: flex-end;
-      }
       ul {
         list-style-type: none;
         margin: 0;
@@ -32,20 +28,7 @@
       @media screen and (max-width: 600px) {
         ul { width: 100%; }
       }
-      </style>
+    </style>
     
-    <ul>
-      <li><a href="#">Menu 1</a></li>
-      <li><a href="#">Menu 2</a></li>
-      <li><a href="#">Menu 3</a></li>
-      <li><a href="#">Menu 4</a></li>
-      <li><a href="#">Menu 5</a></li>
-    </ul>
-
   </template>
-  <script>
-    Polymer({
-      is: 'dashboard-navbar'
-    });
-  </script>
 </dom-module>
